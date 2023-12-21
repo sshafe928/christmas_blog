@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabrina's Wishlist</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='wishlist.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Sabrina's Christmas</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('blog_home') }}">Home</a></li>
+                <li><a href="{{ url_for('blog_gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('blog_wishlist') }}">Wish-List</a></li>
+                <li><a href="{{ url_for('blog_friends') }}">Friends</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Wishlist</h2>
+        <p>Please take a moment to fill out the form.</p>
+        <form id="wishListForm">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+
+            <label for="subject">Subject *</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="wishList">Wish-list *</label>
+            <textarea id="wishList" name="wishList" required></textarea>
+
+            <label for="comment">Leave a comment...</label>
+            <textarea id="comment" name="comment"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p>© 2023 by Sabrina</p>
+    </footer>
+</body>
+</html>

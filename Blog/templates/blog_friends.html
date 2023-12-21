@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabrina's Funky Friends</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='friends.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Sabrina's Christmas</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('blog_home') }}">Home</a></li>
+                <li><a href="{{ url_for('blog_gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('blog_wishlist') }}">Wish-List</a></li>
+                <li><a href="{{ url_for('blog_friends') }}">Friends</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>My Funky Friends</h2>
+        <main>
+        
+            <img src="{{ url_for('static', filename='./images/hehe/holly.png') }}" class="overlay" id="image1" alt="holly">
+            <img src="{{ url_for('static', filename='./images/hehe/gifts-6848549_1280-removebg-preview.png') }}" class="overlay" id="image2" alt="Gifts">
+            <img src="{{ url_for('static', filename='./images/hehe/tree-4633768_1280-removebg-preview.png') }}" class="overlay" id="image3" alt="Christmas Tree">
+    
+            <div class="friend-grid">
+                <div class="friend">
+                    <img src="{{ url_for('static', filename='./images/audpfp.jpg') }}" alt="Audrey">
+                    <p>Audrey is pretty funky. She likes painting and poking me.</p>
+                </div>
+                <div class="friend">
+                    <img src="{{ url_for('static', filename='./images/noahpfp.jpg') }}" alt="Noah">
+                    <p>Noah is pretty funky. He likes playing tennis and drowning himself in work.</p>
+                </div>
+                <div class="friend">
+                    <img src="{{ url_for('static', filename='./images/stryder.jpg') }}" alt="Stryder">
+                    <p>Stryder is pretty funky. He likes energy drink, airsoft and has a habit of driving weird.</p>
+                </div>
+                <div class="friend">
+                    <img src="{{ url_for('static', filename='./images/ren2.0.png') }}" alt="Ren">
+                    <p>Ren is pretty funky. He likes to live in Noah's walls and has a knack for making everyone question everything.</p>
+                </div>
+                <div class="friend">
+                    <img src="{{ url_for('static', filename='./images/jacob.jpg') }}" alt="Jacob">
+                    <p>Jacob is pretty funky. He is a literal genius and is stupidly good at poker.</p>
+                </div>
+                <div class="friend">
+                    <img src="{{ url_for('static', filename='./images/nicopfp.jpg') }}" alt="Nico">
+                    <p>Nico is pretty funky, liking to play Dead by Daylight and is very nice.</p>
+                </div>
+                <div class="friend">
+                    <img src="{{ url_for('static', filename='./images/ethanpfp.png') }}" alt="Ethan">
+                    <p>Ethan is pretty funky. He likes space and really needs a filter sometimes.</p>
+                </div>
+            </div>
+    </main>
+    
+    <footer>
+        <p>Contributions:</p>
+        <p>I haven't known many of these people for long but I hope to continue to know them forever. 
+        I've had so much fun over the past few months. The support they have lend me is impossible to believe.</p>
+        <p>© 2023 by Sabrina</p>
+    </footer>
+</body>
+</html>
